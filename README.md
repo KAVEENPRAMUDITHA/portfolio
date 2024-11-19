@@ -9,6 +9,7 @@ I’ve completed building my personal portfolio website to showcase my journey, 
 Frontend: HTML, CSS, JavaScript, Bootstrap
 Features: Responsive design, interactive UI, project carousel, and contact form integration.
 Tools: Figma (design to development workflow)
+
 💡 Features Include:
 
 Comprehensive About Me section
