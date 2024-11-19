@@ -1,4 +1,4 @@
-<p>:
+<p>
 
 🌐 Excited to Launch My Portfolio Website! 🎉
 
