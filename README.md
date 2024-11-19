@@ -16,6 +16,6 @@ Highlights of my Education, Certifications, Experience, and Volunteering
 Detailed Project Showcase
 Functional Contact Me section
 Check it out and let me know your thoughts! 🚀
-<a href="https://kaveenpramuditha.github.io/portfolio/"> click to go to web site </a> </p>
+<a href="https://kaveenpramuditha.github.io/portfolio/" target="_blank"> click to go to web site </a> </p>
 
 <img src="images/portfolio.JPG">
