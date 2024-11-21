@@ -512,8 +512,6 @@ section{
     .skill-bar {
         width: 100%;
     }
-}
-@media (max-width: 576px) {
     .navbar .container {
         flex-wrap: wrap;
     }
@@ -525,44 +523,89 @@ section{
         margin: 10px auto;
         width: 80%;
     }
-}
-    @media (max-width: 768px) {
-        .work img {
-            height: auto;
-        }
+    .work img {
+        height: auto;
+    }
+
+    .details-section .row > div {
+        margin-bottom: 30px;
+    }
+
+    .timeline {
+        padding-left: 10px;
+    }
+
+    .timeline::before {
+        left: 5px;
+    }
+
+    .timeline-item {
+        padding-left: 20px;
+    }
+
+    .timeline-item::before {
+        left: -5px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-info .info-item h5 {
+        font-size: 1rem;
+    }
     
-        .details-section .row > div {
-            margin-bottom: 30px;
-        }
-    
-        .timeline {
-            padding-left: 10px;
-        }
-    
-        .timeline::before {
-            left: 5px;
-        }
-    
-        .timeline-item {
-            padding-left: 20px;
-        }
-    
-        .timeline-item::before {
-            left: -5px;
-        }
-    
-        .contact-form {
-            padding: 20px;
-        }
-    
-        .contact-info .info-item h5 {
-            font-size: 1rem;
-        }
     }
       
 
-    /* Devices with width less than 576px (e.g., mobile phones) */
+    /* Devices with width less than 576px  */
     @media (max-width: 576px) {
+
+        @media (max-width: 576px) {
+            .navbar-brand {
+                font-size: 1.2em;
+            }
+        
+            .nav-item {
+                padding-inline: 10px;
+            }
+        
+            .hero-section {
+                text-align: center;
+                padding: 2rem;
+            }
+        
+            .profile-image img {
+                width: 80%;
+                height: auto;
+                margin: 1rem auto;
+            }
+        
+            .social-icons {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+        
+            .about-content {
+                flex-direction: column;
+                align-items: center;
+            }
+        
+            .profile-photo img {
+                width: 70%;
+                height: auto;
+            }
+        
+            .about-text {
+                padding: 10px;
+                text-align: center;
+            }
+        
+            .skill-bar {
+                width: 100%;
+            }
+        
         .section-title {
             font-size: 1.8em;
         }
@@ -609,3 +652,4 @@ section{
             font-size: 14px;
         }
     }
+}
