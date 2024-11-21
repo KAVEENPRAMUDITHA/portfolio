@@ -125,7 +125,7 @@ h3 {
 .profile-image img {
     width: 650px;
     height:650px;
-
+    position: relative;
     padding: 20px;
 }
 
@@ -526,3 +526,86 @@ section{
         width: 80%;
     }
 }
+    @media (max-width: 768px) {
+        .work img {
+            height: auto;
+        }
+    
+        .details-section .row > div {
+            margin-bottom: 30px;
+        }
+    
+        .timeline {
+            padding-left: 10px;
+        }
+    
+        .timeline::before {
+            left: 5px;
+        }
+    
+        .timeline-item {
+            padding-left: 20px;
+        }
+    
+        .timeline-item::before {
+            left: -5px;
+        }
+    
+        .contact-form {
+            padding: 20px;
+        }
+    
+        .contact-info .info-item h5 {
+            font-size: 1rem;
+        }
+    }
+      
+
+    /* Devices with width less than 576px (e.g., mobile phones) */
+    @media (max-width: 576px) {
+        .section-title {
+            font-size: 1.8em;
+        }
+    
+        .work-list {
+            grid-template-columns: 1fr;
+            grid-gap: 15px;
+        }
+    
+        .contact-form {
+            padding: 15px;
+        }
+    
+        .contact-info .info-item {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+    
+        .contact-info .info-item h5 {
+            font-size: 0.9rem;
+        }
+    
+        .contact-info .info-item p {
+            font-size: 0.8rem;
+        }
+    
+        .social-icons a {
+            font-size: 1.2rem;
+        }
+    
+        .services-list div {
+            padding: 15px;
+        }
+    
+        .services-list div h2 {
+            font-size: 20px;
+        }
+    
+        .services-list div p {
+            font-size: 14px;
+        }
+    
+        .services-list div a {
+            font-size: 14px;
+        }
+    }
