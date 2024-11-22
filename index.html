@@ -8,7 +8,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-
+    <script> src="script.js" </script>
 </head>
 <body>
 
@@ -101,22 +101,14 @@
                 <img src="images/profile/profile-pic (2).png" alt="Profile Photo">
             </div>
             <div class="about-text">
-                <p>
-                    Hello! I’m Kaveen Pramuditha from Sri Lanka, currently pursuing a BSc (Hons) in Information Technology at Horizon Campus. I’m an ambitious and trustworthy individual with a strong drive for success in the tech industry, with aspirations to become a skilled software engineer.
-
-With a solid foundation in programming languages, database management, networking, and software engineering, I bring both technical expertise and practical skills to every project. I’m also a quick learner who is passionate about exploring new technologies and delivering high-quality results.<br>
-
+                <p>Hello! I’m Kaveen Pramuditha from Sri Lanka, currently pursuing a BSc (Hons) in IT at Horizon Campus. Aspiring to become a skilled software engineer, I bring expertise in programming, database management, networking, and software development.
+                    <br>
     ✨ Key Strengths:<br>
-
-   <span class="text-decoration-underline">Analytical & Logical Thinking:</span> I approach challenges with a structured and critical mindset.<br>
-    
-   <span class="text-decoration-underline">Effective Communication: </span> My strong communication skills support collaboration and clarity.<br>
-    
-    <span class="text-decoration-underline">Team Player & Designer:</span>  I work well in teams and bring a creative perspective to problem-solving.<br>
-    
-        <span class="text-decoration-underline">Problem-Solver:</span> Committed to delivering solutions that meet high standards and drive success.<br>
-
-I’m always looking to connect with like-minded professionals and explore opportunities to apply my skills in meaningful projects. Let’s connect and collaborate!</p>
+          Analytical thinker with a problem-solving mindset<br>
+          Strong communicator and team player<br>
+          Quick learner passionate about new technologies<br>
+    Let’s connect and collaborate on impactful projects!    
+                </p>
             </div>
         </div>
         
@@ -367,7 +359,7 @@ I’m always looking to connect with like-minded professionals and explore oppor
                         <img src="images/logo/location.png" alt="location" >
                         <div>
                             <h5>Address</h5>
-                            <p>134, Thalgampala, Galle.<br>Postal code 80058</p>
+                            <p> Galle,Sri Lanka <br>Postal code 80058</p>
                         </div>
                     </div>
                     <div class="info-item">
@@ -414,23 +406,24 @@ I’m always looking to connect with like-minded professionals and explore oppor
             <div class="col-md-6">
                 <div class="contact-form">
                     <h2>Put a Message</h2>
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <div class="row">
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="First name" required>
+                                <input type="text" class="form-control" name="FirstName" placeholder="First name" required>
                             </div>
                             <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" placeholder="Last name" required>
+                                <input type="text" class="form-control" name="LastName" placeholder="Last name" required>
                             </div>
                         </div>
                         <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Subject" required>
+                            <input type="text" class="form-control" name="Subject" placeholder="Subject" required>
                         </div>
                         <div class="mb-3">
-                            <textarea class="form-control" rows="4" placeholder="Message" required></textarea>
+                            <textarea class="form-control" rows="4" name="Message" placeholder="Message" required></textarea>
                         </div>
                         <button type="submit" class="btn-submit">Submit</button>
                     </form>
+                    
                 </div>
             </div>
         </div>
@@ -442,8 +435,5 @@ I’m always looking to connect with like-minded professionals and explore oppor
     
 <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
-
-
-<script src="script.js"></script>
 </body>
 </html>

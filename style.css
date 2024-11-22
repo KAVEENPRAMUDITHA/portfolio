@@ -1,6 +1,7 @@
 /* Custom Navbar Styles */
 .navbar {
     background: linear-gradient(to left, #023c76, #045fbafc);
+    position: sticky;
 }
 .navbar-brand{
     color:#FFD700;
@@ -132,7 +133,7 @@ h3 {
 /* -------------------About Section Styling -----------------------*/
 .about-section {
     padding: 40px;
-    background: linear-gradient(to right, #062eb3,#023262, #2c049ae1);
+    background: linear-gradient(to right,#392080e1,#023262,#062eb3 );
     color: #fff;
     text-align: center;
 }
@@ -225,7 +226,7 @@ h3 {
 
 .portfolio-section {
     padding: 60px 20px;
-    background: linear-gradient(to right, #062eb3,#023262, #2c049ae1);
+    background: linear-gradient(to right, #062eb3,#023262, #392080e1);
     color: #ffffff;
 }
 
