@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio </title>
+    <script src="script.js"> </script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>  
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"> </script>
 </head>
 <body>
 
@@ -94,7 +94,31 @@
     </div>
 </section>
 
-<!-- About Me Section -->
+<!-- Scroll to Top Button -->
+<button id="scrollToTopBtn" title="Go to top"><img src="images/logo/arrow.png" id="arrow">Top</button>
+<script>
+    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+// Show the button when the user scrolls down 100px from the top
+window.addEventListener("scroll", () => {
+  if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
+    scrollToTopBtn.style.display = "block"; 
+  } else {
+    scrollToTopBtn.style.display = "none"; 
+  }
+});
+
+// Scroll to the top smoothly 
+scrollToTopBtn.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
+</script>
+
+
+<!--------------------------------------------- About Me Section ------------------------------------------>
 <section class="about-section" id="about">
     <div class="container">
         <h2>About me</h2>
@@ -408,7 +432,7 @@
             <div class="col-md-6">
                 <div class="contact-form">
                     <h2>Put a Message</h2>
-                    <form name="submit-to-google-sheet"  action="https://api.web3forms.com/submit" method="POST" >
+                    <form name="submit-to-google-sheet"  action="https://api.web3forms.com/submit" method="POST"   id="form1" >
                         <div class="row">
                             <input type="hidden" name="access_key" value="37a6503c-7d35-44c0-a062-a2a64ea96fdc">
                             <div class="col-md-6 mb-3">
