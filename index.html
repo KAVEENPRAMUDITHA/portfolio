@@ -408,8 +408,9 @@
             <div class="col-md-6">
                 <div class="contact-form">
                     <h2>Put a Message</h2>
-                    <form name="submit-to-google-sheet">
+                    <form name="submit-to-google-sheet"  action="https://api.web3forms.com/submit" method="POST" >
                         <div class="row">
+                            <input type="hidden" name="access_key" value="37a6503c-7d35-44c0-a062-a2a64ea96fdc">
                             <div class="col-md-6 mb-3">
                                 <input type="text" class="form-control" name="FirstName" placeholder="First name" required>
                             </div>
@@ -423,7 +424,7 @@
                         <div class="mb-3">
                             <textarea class="form-control" rows="4" name="Message" placeholder="Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn-submit">Submit</button>
+                        <button type="submit" name="submit" class="btn-submit">Submit</button>
                     </form>
                     
                 </div>
