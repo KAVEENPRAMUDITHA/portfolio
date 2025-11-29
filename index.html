@@ -3,465 +3,459 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio </title>
-    <script src="script.js"> </script>
+    <title>KAVEEN | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>  
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-    <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand" href="#home"> KAVEEN's portfolio </a>
-        <!-- Toggle button for mobile view -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <!-- Navbar links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav mx-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#about">About me</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#porfoilo">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#services">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#contact-me">Contact</a>
-                </li>
-            </ul>
-            <!-- Download CV Button -->
-            <a href="Mycv.pdf" target="_blank" class="btn btn-success" download>
-                <i class="bi bi-download"></i> Download CV
-            </a>
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#home">&lt;KAVEEN /&gt;</a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto text-center">
+                    <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#porfoilo">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact-me">Contact</a></li>
+                </ul>
+                <a href="Mycv.pdf" target="_blank" class="btn btn-primary-custom ms-lg-3 d-none d-lg-block">
+                    Download CV
+                </a>
+            </div>
         </div>
+    </nav>
+
+    <div id="particles-js"></div>
+
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 text-start">
+                    <h4 class="text-white-50">Welcome to my world</h4>
+                    <h1 class="display-4">Hi, I'm <span style="color: var(--primary-color);">Kaveen</span></h1>
+                    <h2 class="h3 mb-4">I'm a <span class="typed">Software Developer</span></h2>
+                    
+                    <p class="lead text-white-50 mb-4">
+                        Passionate undergraduate student from Sri Lanka, building modern web and software solutions.
+                    </p>
+
+                    <div class="social-icons mb-5">
+                        <a href="https://www.linkedin.com/in/kaveen-pramuditha-671b19267" target="_blank" class="social-icon">
+                            <img src="images/linkedin.png" alt="LinkedIn" width="30">
+                        </a>
+                        <a href="https://github.com/KAVEENPRAMUDITHA" target="_blank" class="social-icon">
+                            <img src="images/logo/github.png" alt="GitHub" width="30">
+                        </a>
+                        <a href="https://www.instagram.com/kaveen_pramuditha/" target="_blank" class="social-icon">
+                            <img src="images/logo/instagram.png" alt="Instagram" width="30">
+                        </a>
+                    </div>
+
+                    <div class="buttons">
+                        <a href="Mycv.pdf" target="_blank" class="btn btn-primary-custom me-2" download>Download CV</a>
+                        <a href="#contact-me" class="btn btn-outline-custom">Contact Me</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                    <div class="profile-image">
+                        <img src="images/profile/profile-pic.png" alt="Profile">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-section" id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="row align-items-center">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="glass-card p-2 text-center">
+                        <img src="images/profile/profile-pic (2).png" class="img-fluid rounded" alt="Profile Photo">
+                    </div>
+                </div>
+                <div class="col-lg-7 ps-lg-5">
+                    <div class="glass-card">
+                        <p class="mb-4">Hello! I’m Kaveen Pramuditha from Sri Lanka, currently pursuing a BSc (Hons) in IT at Horizon Campus. Aspiring to become a skilled software engineer, I bring expertise in programming, database management, and web development.</p>
+                        
+                        <div class="row text-center mb-4">
+                            <div class="col-4">
+                                <h3 class="fw-bold text-primary">00+</h3>
+                                <small>Years Experience</small>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold text-primary">08+</h3>
+                                <small>Projects Done</small>
+                            </div>
+                            <div class="col-4">
+                                <h3 class="fw-bold text-primary">00+</h3>
+                                <small>Companies</small>
+                            </div>
+                        </div>
+
+                        <div class="skills-section mt-4">
+    <h3 class="mb-4 text-center fw-bold" style="color: var(--title-color);">My Technical Arsenal</h3>
+    
+    <div class="row g-3"> <div class="col-md-6">
+            <div class="skill-card">
+                <div class="skill-category-title">
+                    <i class="bi bi-code-slash"></i> Languages
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"> Python</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"> Java</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"> C</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"> JavaScript</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="skill-card">
+                <div class="skill-category-title">
+                    <i class="bi bi-cpu"></i> AI & Machine Learning
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"> TensorFlow</div>
+                    <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Keras_logo.svg"> Keras</div>
+                    <div class="skill-item"><img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Scikit_learn_logo_small.svg"> Scikit-learn</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"> Pandas</div>
+                    <div class="skill-item"><i class="bi bi-robot text-info"></i> Deep Learning</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="skill-card">
+                <div class="skill-category-title">
+                    <i class="bi bi-globe"></i> Web Development
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"> React</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"> Node.js</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"> Express.js</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg"> Tailwind</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"> HTML5</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="skill-card">
+                <div class="skill-category-title">
+                    <i class="bi bi-database"></i> Databases & Tools
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"> MongoDB</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"> MySQL</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"> Firebase</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"> Git</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jira/jira-original.svg"> Jira</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12">
+            <div class="skill-card">
+                <div class="skill-category-title">
+                    <i class="bi bi-phone"></i> Mobile, UI & IDEs
+                </div>
+                <div class="d-flex flex-wrap gap-2">
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/android/android-original.svg"> Android Dev</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"> Figma</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"> VS Code</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"> Android Studio</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/anaconda/anaconda-original.svg"> Anaconda</div>
+                    <div class="skill-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg"> Jupyter</div>
+                    <div class="skill-item"><img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg"> Postman</div>
+                </div>
+            </div>
+        </div>
+
     </div>
-</nav>
+</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="porfoilo">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="row g-4">
+                
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card portfolio-item">
+                        <div class="portfolio-img-wrapper">
+                            <img src="images/portfolio.JPG" alt="Portfolio Website">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>My Portfolio</h3>
+                            <p>Modern personal website with glassmorphism design.</p>
+                            <a href="https://github.com/KAVEENPRAMUDITHA/portfolio.git" target="_blank" class="btn btn-sm btn-outline-custom w-100">
+                                <i class="bi bi-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card portfolio-item">
+                        <div class="portfolio-img-wrapper">
+                            <img src="images/carrent.JPG" alt="Car Rental">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Car Manager</h3>
+                            <p>Comprehensive car management system for rentals.</p>
+                            <a href="https://github.com/KAVEENPRAMUDITHA/KAVEENPRAMUDITHA-ITBIN-2211-0263.git" target="_blank" class="btn btn-sm btn-outline-custom w-100">
+                                <i class="bi bi-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-<section class="hero-section text-center d-flex align-items-center justify-content-center">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 text-start">
-                <!-- Title and Subtitle -->
-                <h1 class="display-4">I'm KAVEEN PRAMUDITHA</h1>
-                <p>I'm <span class="typed" data-typed-items=" Undergraduate, Software Developer, UI/UX designer, web Developer">web Developer</span><span class="typed-cursor typed-cursor--blink"></span></p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card portfolio-item">
+                        <div class="portfolio-img-wrapper">
+                            <img src="images/cal.JPG" alt="Calculator">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Mini Calculator</h3>
+                            <p>Functional calculator with a clean user interface.</p>
+                            <a href="https://github.com/KAVEENPRAMUDITHA/Mini_Calculator.git" target="_blank" class="btn btn-sm btn-outline-custom w-100">
+                                <i class="bi bi-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card portfolio-item">
+                        <div class="portfolio-img-wrapper">
+                            <img src="images/carrent.JPG" alt="Car Rental">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Car Manager</h3>
+                            <p>Comprehensive car management system for rentals.</p>
+                            <a href="https://github.com/KAVEENPRAMUDITHA/KAVEENPRAMUDITHA-ITBIN-2211-0263.git" target="_blank" class="btn btn-sm btn-outline-custom w-100">
+                                <i class="bi bi-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4">
+                    <div class="glass-card portfolio-item">
+                        <div class="portfolio-img-wrapper">
+                            <img src="images/billing.JPG" alt="Billing System">
+                        </div>
+                        <div class="portfolio-content">
+                            <h3>Billing System</h3>
+                            <p>Simple billing and invoice generation system.</p>
+                            <a href="https://github.com/KAVEENPRAMUDITHA/Mini_Billing_System.git" target="_blank" class="btn btn-sm btn-outline-custom w-100">
+                                <i class="bi bi-github"></i> View Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="details-section">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="glass-card">
+                        <h3 class="mb-4"><i class="bi bi-mortarboard-fill text-primary"></i> Education</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h5>Horizon Campus <span class="text-bg-info ms-2">2022-Present</span></h5>
+                                <p>BSc (Hons) in Information Technology.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>Vidyaloka College <span class="text-bg-info ms-2">2017-2021</span></h5>
+                                <p>Advanced Level in Physical Science Stream.</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>Upananda College <span class="text-bg-info ms-2">2006-2017</span></h5>
+                                <p>Ordinary Level - 5A, 3B, 1C passes.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 
 
-                <!-- Social Media Icons -->
-
-     <div class="social-icons mb-4">
-    <a href="https://www.linkedin.com/in/kaveen-pramuditha-671b19267" target="_blank" class="social-icon">
-        <img src="images/linkedin.png" alt="LinkedIn" width="40" height="40">
-    </a>
-    <a href="https://github.com/KAVEENPRAMUDITHA" target="_blank" class="social-icon">
-        <img src="images/logo/github.png" alt="GitHub" width="40" height="40">
-    </a>
-    <a href="#" target="_blank" class="social-icon">
-        <img src="images/logo/stack-overflow.png" alt="Stack Overflow" width="40" height="40">
-    </a>
-    <a href="https://www.instagram.com/kaveen_pramuditha/" target="_blank" class="social-icon">
-        <img src="images/logo/instagram.png" alt="Instagram" width="40" height="40">
-    </a>
-</div>
-
-                <!-- Buttons -->
-                <div id="buttons-1">
-                    <a href="Mycv.pdf" target="_blank" class="btn btn-success me-2" download><i class="bi bi-download"></i> Download CV</a>
-                    <a href="#contact-me" class="btn btn-primary"><i class="bi bi-download"></i>Contact me</a>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <!-- Profile Image -->
-                <div class="profile-image">
-                    <img src="images/profile/profile-pic.png" alt="Profile">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Scroll to Top Button -->
-<button id="scrollToTopBtn" title="Go to top"><img src="images/logo/arrow.png" id="arrow">Top</button>
-<script>
-    const scrollToTopBtn = document.getElementById("scrollToTopBtn");
-
-// Show the button when the user scrolls down 100px from the top
-window.addEventListener("scroll", () => {
-  if (document.documentElement.scrollTop > 200 || document.body.scrollTop > 200) {
-    scrollToTopBtn.style.display = "block"; 
-  } else {
-    scrollToTopBtn.style.display = "none"; 
-  }
-});
-
-// Scroll to the top smoothly 
-scrollToTopBtn.addEventListener("click", () => {
-  window.scrollTo({
-    top: 0,
-    behavior: "smooth",
-  });
-});
-</script>
-
-
-<!--------------------------------------------- About Me Section ------------------------------------------>
-<section class="about-section" id="about">
-    <div class="container">
-        <h2>About me</h2>
-        <div class="about-content">
-            <div class="profile-photo">
-                <img src="images/profile/profile-pic (2).png" alt="Profile Photo">
-            </div>
-            <div class="about-text">
-                <p>Hello! I’m Kaveen Pramuditha from Sri Lanka, currently pursuing a BSc (Hons) in IT at Horizon Campus. Aspiring to become a skilled software engineer, I bring expertise in programming, database management, networking, and software development.
-                    <br>
-    ✨ Key Strengths:<br>
-          Analytical thinker with a problem-solving mindset<br>
-          Strong communicator and team player<br>
-          Quick learner passionate about new technologies<br>
-    Let’s connect and collaborate on impactful projects!    
-                </p>
-            </div>
-        </div>
-        
-        <h3>My Skills</h3>
-        <div class="skills">
-            <div class="skill-bar">
-                <span>HTML</span>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 98%;">98%</div>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <span>CSS</span>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 90%;">90%</div>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <span>JavaScript</span>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 88%;">88%</div>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <span>Java</span>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">80%</div>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <span>SQL</span>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 82%;">82%</div>
-                </div>
-            </div>
-            <div class="skill-bar">
-                <span>PHP</span>
-                <div class="progress">
-                    <div class="progress-bar" style="width: 80%;">80%</div>
-                </div>
-            </div>
-        </div>
-        
-        <h3>Tools & Languages</h3>
-        <div class="tools">
-            <img src="images/html.png" alt="HTML">
-            <img src="images/css.png" alt="CSS">
-            <img src="images/js-file.png" alt="JavaScript">
-            <img src="images/java.png" alt="Java">
-            <img src="images/php.png" alt="PHP">
-            <img src="images/mysql.png" alt="MySQL">
-            <img src="images/letter-c.png" alt="C">
-            <img src="images/GITHUB.png" alt="GitHub">
-            <img src="images/git.png" alt="Git">
-            <img src="images/linux.png" alt="Linux">
-            <img src="images/ubuntu.png" alt="Ubuntu">
-            <img src="images/figma.png" alt="Figma">
-            <img src="images/sass.png" alt="Sass">
-        </div>
-    </div>
-</section>
-
-<!-- Portfolio Section -->
-
-    <div id="porfoilo" class="portfolio-section text-center">
-        <div class="container">
-            <h2 class="section-title">Portfolio</h2>
-            
-            <div class="work-list">
-                <div class="work">
-                    <img src="images/portfolio.JPG" alt="myweb">
-                    <div class="layer">
-                        <h3>
-                          My portfolio 
-                        </h3>
-                        <p>
-                         people who want to know about portfolio website find  
-                          the github link for get source code
-                        </p>
-                        <a href="https://github.com/KAVEENPRAMUDITHA/portfolio.git" target="_blank"><img src="images/logo/link.png"  alt=""></a>
+                <div class="col-lg-6">
+                    <div class="glass-card mb-4">
+                        <h3 class="mb-4"><i class="bi bi-award-fill text-primary"></i> Certifications</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h5>Web Design for Beginners</h5>
+                                <p class="text-muted">University of Moratuwa</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>Java Development Workshop</h5>
+                                <p class="text-muted">IDET Technology</p>
+                            </div>
+                             <div class="timeline-item">
+                                <h5>Machine Learning Using Python</h5>
+                                <p class="text-muted">simplilearn</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5> Intro to Deep Learning</h5>
+                                <p class="text-muted">Kaggle</p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="work">
-                    <img src="images/carrent.JPG" alt="carrent">
-                    <div class="layer">
-                        <h3>
-                        Car manager 
-                        </h3>
-                        <p>
-                            people who want to know about the car management system find  
-                            the github link for get source code
-                        </p>
-                        <a href="https://github.com/KAVEENPRAMUDITHA/KAVEENPRAMUDITHA-ITBIN-2211-0263.git" target="_blank"><img src="images/logo/link.png" ></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/cal.JPG" alt="calculator">
-                    <div class="layer">
-                        <h3>
-                        Calculator 
-                        </h3>
-                        <p>
-                            people who want to know about the mini calculator find  
-                            the github link for get source code
-                        </p>
-                        <a href="https://github.com/KAVEENPRAMUDITHA/Mini_Calculator.git" target="_blank"><img src="images/logo/link.png"></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img src="images/billing.JPG" alt="billing">
-                    <div class="layer">
-                        <h3>
-                        Billing System 
-                        </h3>
-                        <p>
-                            people who want to know about the mini billing system find  
-                            the github link for get source code
-                        </p>
-                        <a href="https://github.com/KAVEENPRAMUDITHA/Mini_Billing_System.git" target="_blank"><img src="images/logo/link.png" ></a>
+                    
+                    <div class="glass-card">
+                        <h3 class="mb-4"><i class="bi bi-heart-fill text-primary"></i> Volunteering</h3>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <h5>Vice President(C2SH)</h5>
+                                <p>Community of Cyber Security in Horizon (2024-2025)</p>
+                            </div>
+                            <div class="timeline-item">
+                                <h5>Director (Betterment of Leo)</h5>
+                                <p>Leo Club of Horizon (2024-2025)</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-    </div>
+    </section>
 
-   <!----my details---->
-   <div class="container py-5 details-section">
-    <div class="row">
-        <!-- Education Section -->
-        <div class="col-md-6">
-            <h2>Education</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h5>Upananda College <span class="text-bg-info">2006-2017</span></h5>
-                    <p>I followed my O/L and Gained 5A passes, 3B passes, and 1 C pass. I was a member of several societies and clubs such as school western band, chess club, prefect, and etc.</p>
-                </div>
-                <div class="timeline-item">
-                    <h5>Vidyaloka College <span class="text-bg-info">2017-2021</span></h5>
-                    <p>I followed my A/Ls in the physical science stream and I gained one C pass and 2 S passes both in 2019 and 2020. It was a skillful 5 years.</p>
-                </div>
-                <div class="timeline-item">
-                    <h5>Horizon Campus <span class="text-bg-info">2022-present</span></h5>
-                    <p>Currently, I am a driven and passionate undergraduate student pursuing a BSc (Hons) in Information Technology at Horizon Campus, with a strong ambition to become a software engineer.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Certifications Section -->
-        <div class="col-md-6">
-            <h2>Certifications</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h5>Web Design for Beginners Certification</h5>
-                    <p>Completed a course from the University of Moratuwa introducing the essentials of web design, covering HTML, CSS, and JavaScript to build technical skills through hands-on practice.</p>
-                </div>
-                <div class="timeline-item">
-                    <h5>Workshop of Basic Java Development</h5>
-                    <p>Completed a 5-day Java workshop at IDET (Institute of Digital Engineering) Technology.</p>
-                </div>
-                <div class="timeline-item">
-                    <h5>CSS, Bootstrap, JavaScript, Web Development Course by Udemy</h5>
-                    <p>Completed a comprehensive web development course covering CSS, Bootstrap, JavaScript fundamentals, and responsive design.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="row mt-5">
-        <!-- Experience Section -->
-        <div class="col-md-6">
-            <h2>Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h5>Undergraduate at Horizon Campus <span class="text-bg-info">2022-present</span></h5>
-                    <p>currently pursuing a BSc (Hons) in Information Technology at Horizon Campus. I’m an ambitious and trustworthy individual with a strong drive for success in the tech industry,
-                        with aspirations to become a skilled software engineer. </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Volunteering Section -->
-        <div class="col-md-6">
-            <h2>Volunteering</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h5>Director (Betterment of Leo) <span class="text-bg-info">2024-present</span></h5>
-                    <p>Leo Club of Horizon</p>
-                </div>
-                <div class="timeline-item">
-                    <h5>Event Organizer <span class="text-bg-info">2024-present</span></h5>
-                    <p>Community of Cyber Security in Horizon</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
- <!-- services -->
-
-    <div id="services">
+    <section id="services" class="mt-5 pt-5">
         <div class="container">
             <h2 class="section-title">My Services</h2>
-              <div class="services-list">
-                <div>
-                    <img src="images/logo/coding.png" width="50" height="50" alt="">
-                    <h2>Web design</h2>
-                    <P>
-                        Let's make your web site and click <br> "Learn more" option to contact me
-                    </P>
-                    </P>
-                    <a href="#contact-me">learn more</a>
+            <div class="row g-4 text-center">
+                <div class="col-md-4">
+                    <div class="glass-card">
+                        <img src="images/logo/coding.png" width="60" class="mb-3" style="filter: invert(1);">
+                        <h4>Web Design</h4>
+                        <p class="text-white-50">Modern, responsive, and beautiful websites tailored to your needs.</p>
+                        <a href="#contact-me" class="btn btn-sm btn-outline-custom mt-3">Learn More</a>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/logo/ux-design.png" width="50" height="50" alt="">
-                    <h2>UI/UX design</h2>
-                    <P>
-                        Let's make your design and click <br> "Learn more" option to contact me
-                    </P>
-                    <a href="#contact-me">learn more</a>
+                <div class="col-md-4">
+                    <div class="glass-card">
+                        <img src="images/logo/ux-design.png" width="60" class="mb-3" style="filter: invert(1);">
+                        <h4>UI/UX Design</h4>
+                        <p class="text-white-50">Creating intuitive user experiences and stunning interfaces.</p>
+                        <a href="#contact-me" class="btn btn-sm btn-outline-custom mt-3">Learn More</a>
+                    </div>
                 </div>
-                <div>
-                    <img src="images/logo/developer.png" width="50" height="50" alt="">
-                    <h2>software development</h2>
-                    <P>
-                        Let's make your software and click <br> "Learn more" option to contact me
-                    </P>
-                    </P>
-                    <a href="#contact-me">learn more</a>
-                </div>
-              </div>
-
-        </div>
-    </div>
-
-
-
-            <!-- Contact  -->
-<section id="contact-me">
-
-    <div class="container py-5 contact-section">
-        <h2 class="section-title">Contact Me</h2>
-        <div class="row">
-            <!-- Contact Information -->
-            <div class="col-md-6">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <img src="images/logo/location.png" alt="location" >
-                        <div>
-                            <h5>Address</h5>
-                            <p> Galle,Sri Lanka <br>Postal code 80058</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                     <img src="images/logo/whatsapp.png" alt="whatsapp" >
-                        <div>
-                            <h5>WhatsApp</h5>
-                            <p>070-4850452</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <img src="images/logo/email.png" alt="email">
-                        <div>
-                            <h5>Email Address</h5>
-                            <p>pramudithakaveen51@gmail.com</p>
-                        </div>
-                    </div>
-                    <div class="info-item">
-                        <img id="share" src="images/logo/share.png" alt="share">
-                        <div>
-                            <h5>Social Media</h5>
-                        </div>
-                    </div>
-                    <div class="info-items">
-                    
-                            <div class="social-icons">
-                              <a href="https://www.linkedin.com/in/kaveen-pramuditha-671b19267" target="_blank">
-                                <img src="images/linkedin.png" alt="">
-                              </a>
-                              <a href="https://github.com/KAVEENPRAMUDITHA" target="_blank">
-                                <img src="images/logo/github.png" alt="">
-                              </a>
-                              <a href="https://www.instagram.com/kaveen_pramuditha/" target="_blank">
-                                <img src="images/logo/instagram.png" alt="">
-                              </a>
-                              <a href="" target="_blank">
-                                <img src="images/logo/facebook.png" alt="">
-                              </a>
-                        </div>
+                <div class="col-md-4">
+                    <div class="glass-card">
+                        <img src="images/logo/developer.png" width="60" class="mb-3" style="filter: invert(1);">
+                        <h4>Software Dev</h4>
+                        <p class="text-white-50">Building robust software solutions and applications.</p>
+                        <a href="#contact-me" class="btn btn-sm btn-outline-custom mt-3">Learn More</a>
                     </div>
                 </div>
             </div>
-    
-            <!-- Contact Form -->
-            <div class="col-md-6">
-                <div class="contact-form">
-                    <h2>Put a Message</h2>
-                    <form name="submit-to-google-sheet"  action="https://api.web3forms.com/submit" method="POST"   id="form1" >
-                        <div class="row">
+        </div>
+    </section>
+
+    <section id="contact-me">
+        <div class="container">
+            <h2 class="section-title">Contact Me</h2>
+            <div class="row g-4">
+                <div class="col-lg-5">
+                    <div class="glass-card h-100">
+                        <div class="info-item">
+                            <img src="images/logo/location.png" alt="Location">
+                            <div>
+                                <h5>Address</h5>
+                                <p class="mb-0 text-white-50">Galle, Sri Lanka (80058)</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="images/logo/whatsapp.png" alt="WhatsApp">
+                            <div>
+                                <h5>Phone / WhatsApp</h5>
+                                <p class="mb-0 text-white-50">070-4850452</p>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <img src="images/logo/email.png" alt="Email">
+                            <div>
+                                <h5>Email</h5>
+                                <p class="mb-0 text-white-50">pramudithakaveen51@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-7">
+                    <div class="glass-card">
+                        <h3 class="mb-4">Send Message</h3>
+                        <form name="submit-to-google-sheet" action="https://api.web3forms.com/submit" method="POST" id="form1">
                             <input type="hidden" name="access_key" value="37a6503c-7d35-44c0-a062-a2a64ea96fdc">
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" name="FirstName" placeholder="First name" required>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control contact-input" name="FirstName" placeholder="First Name" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control contact-input" name="LastName" placeholder="Last Name" required>
+                                </div>
                             </div>
-                            <div class="col-md-6 mb-3">
-                                <input type="text" class="form-control" name="LastName" placeholder="Last name" required>
+                            <div class="mb-3">
+                                <input type="email" class="form-control contact-input" name="Email" placeholder="Your Email" required>
                             </div>
-                        </div>
-                        <div class="mb-3">
-                            <input type="email" class="form-control" name="Email" placeholder="Email" required>
-                        </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" name="Subject" placeholder="Subject" required>
-                        </div>
-                        <div class="mb-3">
-                            <textarea class="form-control" rows="4" name="Message" placeholder="Message" required></textarea>
-                        </div>
-                        <button type="submit" name="submit" class="btn-submit">Submit</button>
-                    </form>
-                    
+                            <div class="mb-3">
+                                <input type="text" class="form-control contact-input" name="Subject" placeholder="Subject" required>
+                            </div>
+                            <div class="mb-3">
+                                <textarea class="form-control contact-input" rows="5" name="Message" placeholder="Your Message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary-custom w-100">Send Message</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    
-</section>
-    
+    </section>
 
+    <button id="scrollToTopBtn" title="Go to top" class="p-2 rounded-circle text-white" style="position: fixed; bottom: 30px; right: 30px; z-index: 99;">
+        <i class="bi bi-arrow-up"></i>
+    </button>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script src="main.js"></script>
+    <script src="script.js"></script>
+
+    <script>
+        // Simple Scroll to Top Logic
+        const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+        window.addEventListener("scroll", () => {
+            if (document.documentElement.scrollTop > 200) {
+                scrollToTopBtn.style.display = "block"; 
+            } else {
+                scrollToTopBtn.style.display = "none"; 
+            }
+        });
+        scrollToTopBtn.addEventListener("click", () => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+        });
+    </script>
 </body>
 </html>
