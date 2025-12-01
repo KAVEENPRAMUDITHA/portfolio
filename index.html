@@ -45,8 +45,18 @@
                 <div class="col-lg-6 text-start">
                     <h5 class="text-white-50 mb-1">Welcome to my world</h5>
                     <h1 class="display-4">Hi, I'm <span style="color: var(--primary-color);">Kaveen</span></h1>
-                    <h3 class="h4 mb-3">I'm a <span class="typed">Software Developer</span></h3>
-                    
+                    <h3 class="h4 mb-3">I'm a <span class="typed"></span></h3>
+                    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12/lib/typed.min.js"></script>
+                    <script>
+                        new Typed(".typed", {
+                            strings: [ "Web/Software Developer", "AI/ML Enthusiast", "Problem Solver", "Tech Innovator"],
+                            typeSpeed: 80,
+                            backSpeed: 40,
+                            loop: true,
+                            loopCount: Infinity,
+                            backDelay: 1000
+                        });
+                    </script>
                     <p class="lead text-white-50 mb-4" style="font-size: 1rem;">
                         Passionate undergraduate student from Sri Lanka, building modern web and software solutions.
                     </p>
